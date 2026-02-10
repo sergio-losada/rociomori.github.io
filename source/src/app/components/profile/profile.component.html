@@ -1,0 +1,146 @@
+<section id="sobre-mi" class="profile-section section">
+  <div class="decorative-circle" style="top: 10%; right: 5%; width: 300px; height: 300px;"></div>
+  <div class="decorative-circle" style="bottom: 15%; left: 8%; width: 200px; height: 200px;"></div>
+
+  <div class="container">
+    <div class="profile-content">
+      <div class="profile-image-container" scrollReveal>
+        <div class="profile-image-wrapper">
+          <div class="image-frame">
+            <img src="../../../assets/rocio.jpg" alt="Rocío A. Mori Bálsamo" class="profile-image" />
+          </div>
+          <div class="image-decoration"></div>
+        </div>
+      </div>
+
+      <div class="profile-info" scrollReveal>
+        <div class="greeting">¡Hola! Soy</div>
+        <h1 class="profile-name">Rocío A. Mori Bálsamo</h1>
+        <h2 class="profile-title">Pedagoga</h2>
+
+        <div class="profile-location">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Oviedo, Asturias</span>
+        </div>
+
+        <p class="profile-description">
+          Profesional de la pedagogía con grandes habilidades comunicativas y ganas de incorporarme al mundo laboral de
+          manera plena, con el fin de ir adquiriendo la experiencia necesaria para lograr mis metas.
+        </p>
+
+        <p class="profile-description">
+          Poder dedicarme de lleno a la Pedagogía Laboral, estando interesada tanto en el área de formación de personal
+          como en la selección de personal y gestión del talento del mismo.
+        </p>
+
+        <div class="profile-actions">
+          <a href="#contacto" class="btn btn-primary" (click)="scrollToSection('contacto', $event)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Contactar
+          </a>
+          <a href="https://es.linkedin.com/in/rocioantonellamoribalsamo" target="_blank" rel="noopener"
+            class="btn btn-secondary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z"
+                fill="currentColor" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Competencias Section -->
+    <div class="competencias-section" scrollReveal>
+      <h3 class="competencias-title">Competencias Clave</h3>
+      <div class="competencias-grid">
+        <div class="competencia-card" *ngFor="let competencia of competencias">
+          <div class="competencia-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h4 class="competencia-name">{{ competencia }}</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Idiomas Section -->
+    <div class="idiomas-section" scrollReveal>
+      <h3 class="idiomas-title">Idiomas</h3>
+      <div class="idiomas-grid">
+        <div class="idioma-card">
+          <div class="idioma-info">
+            <h4 class="idioma-name">Español</h4>
+            <span class="idioma-level">Nativo</span>
+          </div>
+        </div>
+        <div class="idioma-card">
+          <div class="idioma-info">
+            <h4 class="idioma-name">Inglés</h4>
+            <span class="idioma-level">Intermedio (B1)</span>
+          </div>
+          <div class="idioma-certification">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>Certificado EBAU</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Otros Datos Section -->
+    <div class="otros-datos-section" scrollReveal>
+      <h3 class="otros-datos-title">Otros Datos</h3>
+      <div class="otros-datos-grid">
+        <div class="dato-card">
+          <div class="dato-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39467C21.7563 5.72723 21.351 5.1208 20.84 4.61Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="dato-info">
+            <h4 class="dato-name">Voluntariado</h4>
+            <span class="dato-description">Síndrome de Down Principado de Asturias (2020)</span>
+          </div>
+        </div>
+        <div class="dato-card">
+          <div class="dato-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 17C9 17.394 9.0776 17.7841 9.22836 18.1481C9.37913 18.512 9.6001 18.8427 9.87868 19.1213C10.1573 19.3999 10.488 19.6209 10.8519 19.7716C11.2159 19.9224 11.606 20 12 20C12.394 20 12.7841 19.9224 13.1481 19.7716C13.512 19.6209 13.8427 19.3999 14.1213 19.1213C14.3999 18.8427 14.6209 18.512 14.7716 18.1481C14.9224 17.7841 15 17.394 15 17V3H9V17Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M5 11V17C5 17.7956 5.31607 18.5587 5.87868 19.1213C6.44129 19.6839 7.20435 20 8 20H9"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M19 11V17C19 17.7956 18.6839 18.5587 18.1213 19.1213C17.5587 19.6839 16.7956 20 16 20H15"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="dato-info">
+            <h4 class="dato-name">Carnet de Conducir</h4>
+            <span class="dato-description">Permiso B</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

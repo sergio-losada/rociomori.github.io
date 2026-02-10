@@ -1,0 +1,31 @@
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <h2 class="logo-text">Rocío Mori</h2>
+        <span class="logo-subtitle">Pedagoga</span>
+      </div>
+      
+      <ul class="nav-menu" [class.active]="isMenuOpen">
+        <li class="nav-item">
+          <a href="#sobre-mi" class="nav-link" (click)="scrollToSection('sobre-mi', $event)">Sobre Mí</a>
+        </li>
+        <li class="nav-item">
+          <a href="#experiencia" class="nav-link" (click)="scrollToSection('experiencia', $event)">Experiencia</a>
+        </li>
+        <li class="nav-item">
+          <a href="#formacion" class="nav-link" (click)="scrollToSection('formacion', $event)">Formación</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contacto" class="nav-link" (click)="scrollToSection('contacto', $event)">Contacto</a>
+        </li>
+      </ul>
+      
+      <div class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </div>
+</header>

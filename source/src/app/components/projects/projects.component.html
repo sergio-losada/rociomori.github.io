@@ -1,0 +1,56 @@
+<section id="formacion" class="formacion-section section">
+  <div class="container">
+    <div class="section-header text-center" scrollReveal>
+      <h2 class="section-title">Formación Académica</h2>
+      <p class="section-subtitle">Mi trayectoria educativa y desarrollo profesional</p>
+    </div>
+
+    <div class="formacion-grid">
+      <div class="formacion-card" 
+           *ngFor="let formacion of formacionTopRow"
+           scrollReveal>
+        
+        <div class="formacion-year">{{ formacion.year }}</div>
+        
+        <div class="formacion-content">
+          <div class="formacion-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3L1 9L12 15L21 10.09V17H23V9L12 3ZM5 13.18V17.18C5 19.84 8.24 22 12 22C15.76 22 19 19.84 19 17.18V13.18L12 17L5 13.18Z" fill="currentColor"/>
+            </svg>
+          </div>
+          
+          <h3 class="formacion-title">{{ formacion.title }}</h3>
+          <h4 class="formacion-institution">{{ formacion.institution }}</h4>
+          
+          <p class="formacion-description" *ngIf="formacion.description">
+            {{ formacion.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="formacion-bottom-row">
+      <div class="formacion-card" 
+           *ngFor="let formacion of formacionBottomRow"
+           scrollReveal>
+        
+        <div class="formacion-year">{{ formacion.year }}</div>
+        
+        <div class="formacion-content">
+          <div class="formacion-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3L1 9L12 15L21 10.09V17H23V9L12 3ZM5 13.18V17.18C5 19.84 8.24 22 12 22C15.76 22 19 19.84 19 17.18V13.18L12 17L5 13.18Z" fill="currentColor"/>
+            </svg>
+          </div>
+          
+          <h3 class="formacion-title">{{ formacion.title }}</h3>
+          <h4 class="formacion-institution">{{ formacion.institution }}</h4>
+          
+          <p class="formacion-description" *ngIf="formacion.description">
+            {{ formacion.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
