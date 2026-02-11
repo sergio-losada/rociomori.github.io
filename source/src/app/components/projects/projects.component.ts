@@ -25,7 +25,7 @@ export class ProjectsComponent {
     },
     {
       year: '2023',
-      title: 'Master en Psicopedagogía Laboral y Social',
+      title: 'Máster en Psicopedagogía Laboral y Social',
       institution: 'TECH Universidad Tecnológica'
     },
     {

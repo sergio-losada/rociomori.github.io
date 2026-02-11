@@ -23,7 +23,7 @@ export class ExperienceComponent {
     {
       position: 'COO',
       company: 'Taxco Tortillería',
-      location: 'Gijón',
+      location: 'Gijón, Asturias',
       period: 'Ene. 2023 - Actualidad',
       responsibilities: [
         'Atención al cliente',
@@ -36,7 +36,7 @@ export class ExperienceComponent {
     {
       position: 'Formadora',
       company: 'PFS Grupo',
-      location: 'Langreo',
+      location: 'Langreo, Asturias',
       period: 'Sept. 2022 - Nov. 2022',
       responsibilities: [
         'Diseño e impartición del programa de "Competencias Clave II", dirigido a personas en riesgo de exclusión social',
@@ -48,8 +48,8 @@ export class ExperienceComponent {
     {
       position: 'Dependienta Sfera',
       company: 'Grupo El Corte Inglés',
-      location: 'Oviedo',
-      period: 'Jun. 2022 - Sept. 2022 / Nov. 2022 - Ene. 2023',
+      location: 'Oviedo, Asturias',
+      period: 'Jun. 2022 - Sept. 2022\nNov. 2022 - Ene. 2023',
       responsibilities: [
         'Atención y cobro a clientes',
         'Recepción de mercancía y colocación en tienda y/o almacén',
@@ -60,7 +60,7 @@ export class ExperienceComponent {
     {
       position: 'Prácticas curriculares',
       company: 'Clínica Gardner',
-      location: 'Gijón',
+      location: 'Gijón, Asturias',
       period: 'Nov. 2021 - Ene. 2022',
       responsibilities: [
         'Aplicación de pruebas diagnósticas',
@@ -72,7 +72,7 @@ export class ExperienceComponent {
     {
       position: 'Profesora de extraescolares',
       company: 'Alventus',
-      location: 'Oviedo',
+      location: 'Oviedo, Asturias',
       period: 'Oct. 2019 - Mar. 2020',
       responsibilities: [
         'Diseño de sesiones de trabajo',
